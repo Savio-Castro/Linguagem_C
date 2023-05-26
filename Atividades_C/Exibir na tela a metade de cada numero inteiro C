@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+ int  num1, num2, num3, num4, num5, num6, metade;
+
+ printf("\n Digite o primeiro número:");
+ scanf("%d", &num1);
+ printf("\n Digite o segundo número:");
+ scanf("%d", &num2);
+ printf("\n Digite o terceiro número:");
+ scanf("%d", &num3);
+ printf("\n Digite o quarto número:");
+ scanf("%d", &num4);
+ printf("\n Digite o quinto número:");
+ scanf("%d", &num5);
+ printf("\n Digite o sexto número:");
+ scanf("%d", &num6);
+
+  metade = num1 /2;
+  printf("\n A metade do primeiro número é %d ", metade);
+  metade = num2 /2;
+  printf("\n A metade do segundo número é %d ", metade);
+  metade = num3 /2;
+  printf("\n A metade do terceiro número é %d ", metade);
+  metade = num4 /2;
+  printf("\n A metade do quarto número é %d ", metade);
+  metade = num5 /2;
+  printf("\n A metade do quinto número é %d ", metade);
+  metade = num6 /2;
+  printf("\n A metade do sexto número é %d ", metade);
+ 
+  return 0;
+}

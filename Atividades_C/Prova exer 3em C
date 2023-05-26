@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(int argc, char *argv[]) {
+    printf("O Peso do elevador suporta até 500 Kg\n");
+    //declaração de variaveis
+    int numeros[5], cont, soma=0;
+
+    //loop para receber os valores digitados pelo usuario
+    for (cont=0; cont<5; cont++){
+        printf ("Digite um peso [%d]: ", cont);
+        scanf ("%d", &numeros[cont]);
+    }
+
+    //Somando os valores do vetor
+    for (cont=0;cont<5;cont++) {
+    soma = soma + numeros[cont];
+    }
+
+    //imprimindo a soma e o produto
+    printf("A soma de todos os pesos são: = %d\n", soma);
+  
+  if( soma > 500) {
+    printf("\nO Elevador não suporta essa quantidade de pessoas!");
+  } else{
+    printf("\nElevador suporta");
+  }
+  return 0;
+
+
+}

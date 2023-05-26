@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+ int  X, Y, Z, comprimento;
+
+ printf("\n Digite um valor para X:");
+ scanf("%d", &X);
+ printf("\n Digite um valor para Y:");
+ scanf("%d", &Y);
+ printf("\n Digite um valor para Z:");
+ scanf("%d", &Z);
+
+ if (X == Y && X == Z){
+		printf("Três lados iguais . Trata-se de um Triangulo Equilatero");
+	}else if(X == Y || X == Z){
+		printf("Dois lados iguais . Trata-se de um Triangulo Isosceles");
+		}else
+		printf("Três lados diferentes.");
+  
+  return 0;
+}

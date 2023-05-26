@@ -1,0 +1,39 @@
+
+#include <stdio.h>
+int main(){
+   int a,b,l,quant=0,soma,impares;      
+   printf("Digite primeiro número");   
+   scanf("%d",&a);
+   printf("Digite o segundo número");   
+   scanf("%d",&b);
+      if(a==b){
+        printf("Não existe intervalo");
+      }
+      if(a+1==b){
+         printf("Não existe intervalo");
+      }
+      if(a==b+1){
+         printf("Não existe intervalo");
+      }
+     if(a<b){
+         for(l=a+1;l<b;l++){
+          soma=soma+l;
+          quant++;
+               if(l%2==1){
+                  impares++;
+              }               
+        }    
+   }
+       if(b<a){
+         for(l=b+1;l<a;l++){
+           soma=soma+l;
+           quant++;
+           if(l%2==1){
+               impares++;
+          }
+       }
+   }
+      printf("\nA soma: %d\n",soma);
+      printf("O total %d\n",quant);
+      printf("O total dos numeros impares %d",impares);
+}
